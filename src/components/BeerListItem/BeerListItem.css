@@ -1,0 +1,51 @@
+.beer-list-item {
+  border-bottom: 1px solid #d5d0d0;
+  margin: 0 0.5em;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.beer-name {
+  font-size: 1.7em;
+  color: #2b2b2b;
+  margin-bottom: 0.2em;
+}
+
+.beer-origin-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beer-brewery {
+  margin: 0;
+  color: #3d3d3d;
+  font-size: 1.2em;
+}
+
+.beer-country {
+  margin: 0;
+  color: #5b5b5b;
+  font-size: 0.9em;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.beer-list-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beer-details {
+  font-size: 0.8em;
+  color: #5b5b5b;
+  display: flex;
+}
+
+.beer-style {
+  margin-right: 2em;
+}
+
+.add-button-container {
+  display: flex;
+  align-items: center;
+}
