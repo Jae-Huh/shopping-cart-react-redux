@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-// import reducers and list in combinereducers
+import addToCart from './add-to-cart'
 
 export default combineReducers({
-
+  addToCart
 })
