@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 
 import './Cart.css'
 import CartItem from '../CartItem/CartItem'
-import addToCart from '../../reducers'
 
 const Cart = (props) => {
   return (
@@ -18,7 +17,7 @@ const Cart = (props) => {
 
 function mapStateToProps (state) {
   return {
-    beersInCart: state.addToCart
+    beersInCart: state.cart
   }
 }
 
