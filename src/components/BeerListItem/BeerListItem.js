@@ -16,7 +16,7 @@ const BeerListItem = (props) => {
           <p className="beer-abv">{props.abv}</p>
         </div>
         <div className="add-button-container">
-          <button>Add to Cart</button>
+          <button onClick={() => props.addToCart(props.beerName)}>Add to Cart</button>
         </div>
       </div>
     </div>
