@@ -1,4 +1,4 @@
-import { ADD_TO_CART } from '../actions'
+import { ADD_TO_CART, DELETE_FROM_CART } from '../actions'
 
 const initialState = []
 
@@ -7,6 +7,9 @@ const cart = (state = initialState, action) => {
     case ADD_TO_CART:
       return addToCart(state, action.beerName)
 
+    case DELETE_FROM_CART:
+      return state.filter(beer => beer.beerName !== action.beerName)
+
     default:
       return state
   }
@@ -14,7 +17,7 @@ const cart = (state = initialState, action) => {
 
 function addToCart (cart, beer) {
   let inCart = false
-  
+
   const updatedCart = cart.map(item => {
     if (item.beerName === beer) {
       item.quantity += 1

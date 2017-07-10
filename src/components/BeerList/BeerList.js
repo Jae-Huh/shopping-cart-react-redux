@@ -27,7 +27,7 @@ function mapStateToProps (state) {
 
 function mapDispatchToProps (dispatch) {
   return {
-    addToCart: (beer) => {
+    addToCart: beer => {
       dispatch(addToCart(beer))
     }
   }

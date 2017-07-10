@@ -11,7 +11,7 @@ const CartItem = (props) => {
         <input className="beer-quantity" type="number" min="1" max="100" placeholder={props.quantity} />
       </label>
       <div className="cart-button-container">
-        <button className="cart-delete-button">Delete</button>
+        <button className="cart-delete-button" onClick={() => props.deleteFromCart(props.beerName)}>Delete</button>
       </div>
     </div>
   )
